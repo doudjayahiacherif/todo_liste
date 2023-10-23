@@ -1,0 +1,9 @@
+h1{
+	border:transparent dashed 2px;
+	background:rgb(108,230,115);
+	border-radius:2px;
+	color:white;
+}
+body{
+	background:rgb(84,254,109);
+}
