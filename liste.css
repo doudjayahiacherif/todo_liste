@@ -1,48 +1,42 @@
-/* Include the padding and border in an element's total width and height */
-* {
+body{background:rgb(239,239,239);}
+{
   box-sizing: border-box;
 }
-
-/* Remove margins and padding from the list */
 ul {
   margin: 0;
   padding: 0;
 }
-
-/* Style the list items */
+/* Styliser les elements de la liste  */
 ul li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
-  background: #eee;
+  background: rgb(255,79,79);
   font-size: 18px;
   transition: 0.2s;
-
-  /* make the list items unselectable */
+  /*Rendez les elements de la liste non selectionnables */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-
-/* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
-  background: #f9f9f9;
+  background: rgb(255,79,79);
+  
 }
-
-/* Darker background-color on hover */
 ul li:hover {
   background: #ddd;
 }
 
-/* When clicked on, add a background color and strike out text */
+/* Lorsqu'on clique dessus,ajoutez une couleur de fond et rayez le texte */
 ul li.checked {
-  background: #888;
+  background: rgb(0,255,128);
   color: #fff;
   text-decoration: line-through;
+  
 }
 
-/* Add a "checked" mark when clicked on */
+/* Ajoutez une marque  "checked" lorsqu'elle est cliquée */
 ul li.checked::before {
   content: '';
   position: absolute;
@@ -56,7 +50,7 @@ ul li.checked::before {
   width: 7px;
 }
 
-/* Style the close button */
+/* Stylisez le bouton de fermeture */
 .close {
   position: absolute;
   right: 0;
@@ -69,22 +63,23 @@ ul li.checked::before {
   color: white;
 }
 
-/* Style the header */
+/* Stylisez l'en tete*/
 .header {
-  background-color: aqua;
-  padding: 30px 40px;
-  color: pink;
+  background-color: rgb(132,255,132);
+  padding: 20px 40px;
+  color: rgb(255,0,128);
   text-align: center;
+  font-size:30px;
 }
 
-/* Clear floats after the header */
+/* Effacez les sauts de ligne apres l'en tete */
 .header:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the input */
+/* Stylisez input */
 input {
   margin: 0;
   border: none;
@@ -95,11 +90,11 @@ input {
   font-size: 16px;
 }
 
-/* Style the "Add" button */
+/* Styliser le bouton "Add" */
 .addBtn {
   padding: 10px;
   width: 25%;
-  background:purple;
+  background:rgb(202,149,234);
   color: white;
   float: left;
   text-align: center;
@@ -110,5 +105,5 @@ input {
 }
 
 .addBtn:hover {
-  background-color:yellow;color:black;
+  background-color:rgb(231,221,97);color:black;
 }

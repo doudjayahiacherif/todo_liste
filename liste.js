@@ -1,4 +1,7 @@
-// Create a "close" button and append it to each list item
+
+
+
+// Creez un bouton "fermer" et attachez-le a chaque element de la liste
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -9,7 +12,7 @@ for (i = 0; i < myNodelist.length; i++) {
   myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+// cliquez sur le boutton de fermeture pour masquer l'element actuel de la liste
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -19,15 +22,16 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
+// Ajoutez "checked" lors du clic sur un element de la list
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
+	if(ev.target.classList.contains('checked')){alert('Congratulations!Your perseverance has turned challenges into triumphs.Well done!');}
   }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
+// Creez un nouvel element de liste en cliquant sur le bouton "add"
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
@@ -52,4 +56,5 @@ function newElement() {
       div.style.display = "none";
     }
   }
+  function verifierTache(){if (li.checked){alert("Bravo!");}}
 }
