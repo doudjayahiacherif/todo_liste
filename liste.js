@@ -27,7 +27,7 @@ var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
-	if(ev.target.classList.contains('checked')){alert('Congratulations!Your perseverance has turned challenges into triumphs.Well done!');}
+	if(ev.target.classList.contains('checked')){alert('Well done!');}
   }
 }, false);
 

@@ -1,4 +1,4 @@
-body{background:rgb(239,239,239);}
+body{background:rgb(252,249,177);height:100%;width:99%;}
 {
   box-sizing: border-box;
 }
@@ -11,7 +11,11 @@ ul li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
-  background: rgb(255,79,79);
+  background:rgb(239,239,239);
+  color:rgb(254,69,36);
+  border:rgb(254,124,101) 1px solid;
+  font-weight:bold;
+  border-radius:10px;
   font-size: 18px;
   transition: 0.2s;
   /*Rendez les elements de la liste non selectionnables */
@@ -21,8 +25,11 @@ ul li {
   user-select: none;
 }
 ul li:nth-child(odd) {
-  background: rgb(255,79,79);
-  
+  background:rgb(239,239,239);
+  color:rgb(254,69,36);
+  border:rgb(254,124,101) 1px solid;
+  border-radius:10px;
+  font-weight:bold;
 }
 ul li:hover {
   background: #ddd;
@@ -30,9 +37,10 @@ ul li:hover {
 
 /* Lorsqu'on clique dessus,ajoutez une couleur de fond et rayez le texte */
 ul li.checked {
-  background: rgb(0,255,128);
-  color: #fff;
-  text-decoration: line-through;
+  background: rgb(239,239,239);
+  color: green;
+  font-weight:bold;
+  text-decoration: line-through green;
   
 }
 
@@ -40,7 +48,7 @@ ul li.checked {
 ul li.checked::before {
   content: '';
   position: absolute;
-  border-color: #fff;
+  border-color: green;
   border-style: solid;
   border-width: 0 2px 2px 0;
   top: 10px;
@@ -53,9 +61,15 @@ ul li.checked::before {
 /* Stylisez le bouton de fermeture */
 .close {
   position: absolute;
-  right: 0;
+  right: 0px;
   top: 0;
   padding: 12px 16px 12px 16px;
+  border:rgb(254,124,101) ;
+  border-radius:10px;
+  background:rgb(239,239,239);
+  color:rgb(254,124,101);
+  font-weight:bold;
+  
 }
 
 .close:hover {
@@ -65,11 +79,12 @@ ul li.checked::before {
 
 /* Stylisez l'en tete*/
 .header {
-  background-color: rgb(132,255,132);
+  background-color: rgb(255,118,94);
   padding: 20px 40px;
-  color: rgb(255,0,128);
+  color: white;
   text-align: center;
   font-size:30px;
+  border-radius:10px;
 }
 
 /* Effacez les sauts de ligne apres l'en tete */
@@ -83,8 +98,8 @@ ul li.checked::before {
 input {
   margin: 0;
   border: none;
-  border-radius: 0;
-  width: 75%;
+  border-radius:10px;
+  width: 70%;
   padding: 10px;
   float: left;
   font-size: 16px;
@@ -93,17 +108,18 @@ input {
 /* Styliser le bouton "Add" */
 .addBtn {
   padding: 10px;
-  width: 25%;
-  background:rgb(202,149,234);
-  color: white;
+  width: 10%;
+  background:white;
+  color: rgb(254,124,101);
   float: left;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
-  border-radius: 0;
+  border-radius: 10px;
+  border:rgb(254,124,101);
 }
 
 .addBtn:hover {
-  background-color:rgb(231,221,97);color:black;
+  background-color:rgb(254,124,101);color:white;border:white 1px solid;
 }
